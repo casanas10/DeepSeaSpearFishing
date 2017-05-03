@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		71AAD7E21EAD943800BEF8EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAD7E11EAD943800BEF8EC /* AppDelegate.swift */; };
 		71AAD7E41EAD943800BEF8EC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 71AAD7E31EAD943800BEF8EC /* GameScene.sks */; };
-		71AAD7E61EAD943800BEF8EC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 71AAD7E51EAD943800BEF8EC /* Actions.sks */; };
 		71AAD7E81EAD943800BEF8EC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAD7E71EAD943800BEF8EC /* GameScene.swift */; };
 		71AAD7EA1EAD943800BEF8EC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAD7E91EAD943800BEF8EC /* GameViewController.swift */; };
 		71AAD7ED1EAD943800BEF8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71AAD7EB1EAD943800BEF8EC /* Main.storyboard */; };
 		71AAD7EF1EAD943800BEF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71AAD7EE1EAD943800BEF8EC /* Assets.xcassets */; };
 		71AAD7F21EAD943800BEF8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71AAD7F01EAD943800BEF8EC /* LaunchScreen.storyboard */; };
 		71AAD7FD1EAD943800BEF8EC /* DeepSeaSpearFishingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAD7FC1EAD943800BEF8EC /* DeepSeaSpearFishingTests.swift */; };
+		7E3D5F7F1EAE59CA003C3976 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E3D5F7E1EAE59CA003C3976 /* MainMenu.sks */; };
+		7E3D5F811EAE5A9D003C3976 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D5F801EAE5A9D003C3976 /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,6 @@
 		71AAD7DE1EAD943800BEF8EC /* DeepSeaSpearFishing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepSeaSpearFishing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71AAD7E11EAD943800BEF8EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71AAD7E31EAD943800BEF8EC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		71AAD7E51EAD943800BEF8EC /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		71AAD7E71EAD943800BEF8EC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		71AAD7E91EAD943800BEF8EC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		71AAD7EC1EAD943800BEF8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		71AAD7F81EAD943800BEF8EC /* DeepSeaSpearFishingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSeaSpearFishingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71AAD7FC1EAD943800BEF8EC /* DeepSeaSpearFishingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeaSpearFishingTests.swift; sourceTree = "<group>"; };
 		71AAD7FE1EAD943800BEF8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3D5F7E1EAE59CA003C3976 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		7E3D5F801EAE5A9D003C3976 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +87,14 @@
 			children = (
 				71AAD7E11EAD943800BEF8EC /* AppDelegate.swift */,
 				71AAD7E31EAD943800BEF8EC /* GameScene.sks */,
-				71AAD7E51EAD943800BEF8EC /* Actions.sks */,
 				71AAD7E71EAD943800BEF8EC /* GameScene.swift */,
 				71AAD7E91EAD943800BEF8EC /* GameViewController.swift */,
 				71AAD7EB1EAD943800BEF8EC /* Main.storyboard */,
 				71AAD7EE1EAD943800BEF8EC /* Assets.xcassets */,
 				71AAD7F01EAD943800BEF8EC /* LaunchScreen.storyboard */,
 				71AAD7F31EAD943800BEF8EC /* Info.plist */,
+				7E3D5F7E1EAE59CA003C3976 /* MainMenu.sks */,
+				7E3D5F801EAE5A9D003C3976 /* MainMenu.swift */,
 			);
 			path = DeepSeaSpearFishing;
 			sourceTree = "<group>";
@@ -193,8 +196,8 @@
 				71AAD7ED1EAD943800BEF8EC /* Main.storyboard in Resources */,
 				71AAD7E41EAD943800BEF8EC /* GameScene.sks in Resources */,
 				71AAD7EF1EAD943800BEF8EC /* Assets.xcassets in Resources */,
+				7E3D5F7F1EAE59CA003C3976 /* MainMenu.sks in Resources */,
 				71AAD7F21EAD943800BEF8EC /* LaunchScreen.storyboard in Resources */,
-				71AAD7E61EAD943800BEF8EC /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +218,7 @@
 				71AAD7E81EAD943800BEF8EC /* GameScene.swift in Sources */,
 				71AAD7EA1EAD943800BEF8EC /* GameViewController.swift in Sources */,
 				71AAD7E21EAD943800BEF8EC /* AppDelegate.swift in Sources */,
+				7E3D5F811EAE5A9D003C3976 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +428,7 @@
 				71AAD8031EAD943800BEF8EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71AAD8041EAD943800BEF8EC /* Build configuration list for PBXNativeTarget "DeepSeaSpearFishingTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +437,7 @@
 				71AAD8061EAD943800BEF8EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
