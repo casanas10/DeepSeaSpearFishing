@@ -16,6 +16,8 @@ class GameScene: SKScene {
         initializingScrollingBackground()
         
         initPlayer()
+        
+        displaySpearAmountLeft()
     }
     
     func initializingScrollingBackground() {
@@ -48,25 +50,81 @@ class GameScene: SKScene {
     
     
     func initPlayer() {
-        
         //adding player
-        let fishermanTexture = SKTexture(imageNamed: "fisherman")
-        let fisherman = SKSpriteNode(texture: fishermanTexture)
-        
-        fisherman.xScale = 1.25
-        fisherman.yScale = 1.25
+        let fisherman: Fisherman = Fisherman()
         
         let fishermanXPosition = (self.scene?.size.width)! / 6
         let fishermanYPosition = (self.scene?.size.height)! / 2
         
-        fisherman.position = CGPoint(x: fishermanXPosition, y: fishermanYPosition)
+        fisherman.setPosition(fishermanXPos: Double(fishermanXPosition), fishermanYPos: Double(fishermanYPosition))
         
-        fisherman.zPosition = 1
-        
-        self.addChild(fisherman)
+        self.addChild(fisherman.getFishermanSpriteNode())
     }
     
-
+  
+    func displaySpearAmountLeft(){
+        
+        //keeping score
+//        var spearAmount = 20
+        let spearAmountText = SKLabelNode(fontNamed: "Chalkduster")
+        
+        let spearAmountTextXPosition = (self.scene?.size.width)! * 0.30
+        let spearAmountTextYPosition = (self.scene?.size.height)! / 1.08
+        
+        spearAmountText.position = CGPoint( x: spearAmountTextXPosition, y: spearAmountTextYPosition);
+        spearAmountText.zPosition = 1
+        spearAmountText.fontSize = 25
+        spearAmountText.text = "20"
+        
+        self.addChild(spearAmountText)
+    }
+    
+    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        
+//        for touch: AnyObject in touches {
+//            
+//            let location = touch.location(in: self)
+//            let thisNode = self.atPoint(location)
+//            
+//            
+//            if (thisNode.name != nil) {
+//                
+//                //shoot a spear if the shoot button is pressed
+//                if (thisNode.name == "shootButton"){
+//                    
+////                    addSpear()
+//                    
+//                    //if something else is pressed move player to that position
+//                    
+//                } else {
+//                    
+//                    print(location.y)
+//                    
+//                    //set the new position
+////                    var newPosition = CGPoint(x: 23, y: location.y)
+//                    
+////                    if (newPosition.y < player.size.height/2){
+////                        
+////                        newPosition.y = player.size.height/2
+////                    }
+////                    
+////                    if (newPosition.y > self.size.height - player.size.width/6) {
+////                        
+////                        newPosition.y = self.size.height - player.size.width/6
+////                    }
+////                    
+////                    
+////                    //update player position
+////                    player.position.y = newPosition.y;
+////                    
+//                    
+//                }
+//            }
+//            
+//        }
+//    }
+    
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
         moveBackground()
